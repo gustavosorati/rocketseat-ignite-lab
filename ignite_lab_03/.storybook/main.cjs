@@ -19,5 +19,7 @@ module.exports = {
     if(configType === 'PRODUCTION') {
       config.base = '/ignite_lab/ignite_lab_03/'
     }
+
+    return config
   }
 }
