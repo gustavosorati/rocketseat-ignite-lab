@@ -25,6 +25,6 @@ jobs:
         run: cd ignite_lab_03 && npm run build-storybook
 
       - name: Deploy Storybook
-        run: cd ignite_lab_03 && npm run deploy-storybook -- --ci --existing-output-dir=ignite_lab_03/storybook-static
+        run: cd ignite_lab_03 && npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
